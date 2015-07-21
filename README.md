@@ -1,7 +1,7 @@
 node-findout
 ============
 
-Node.js module to find out a  module.
+Node.js module to find out a module.
 
 
 <!-- Badge start -->
@@ -14,10 +14,44 @@ Node.js module to find out a  module.
 Usage
 -----
 
+`findout(name)` works like require(), but has a lot more locations to search.  
 
 ```javascript
+var findout = require('findout');
+
+// Resolve a module path.
+var pathOfFoo = findout.resolve('foo');
+
+// Find out a module.
+var foo = findout('foo', {
+    cwd: __dirname // Lookup from current directory.
+});
 
 ```
+
+How it works
+------------
+
+If you call `findout('foo')` with below options,
+
+```javascript
+findout('foo', {
+    cwd: '/bar/baz');
+});
+```
+
+findout will try in the following ways, 
+
+1. `require('foo')`
+2. `require('/bar/baz/foo')`
+3. `require('/bar/baz/node_modules/foo')`
+4. `require('/bar/foo')`
+5. `require('/bar/node_modules/foo')`
+6. `require('/foo')`
+7. `require('/node_modules/foo')`
+
+If it still can't find any, throws an error.
+
 
 
 

@@ -1,6 +1,6 @@
 {
   "name": "findout",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Node.js module to find out a module.",
   "main": "findout.js",
   "scripts": {
