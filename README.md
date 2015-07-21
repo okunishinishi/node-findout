@@ -1,4 +1,4 @@
-node-findout
+findout
 ============
 
 Node.js module to find out a module.
@@ -11,10 +11,18 @@ Node.js module to find out a module.
 [![Code Coverage][my_codeclimate_coverage_badge_url]][my_codeclimate_url]
 [![npm version][my_npm_budge_url]][my_npm_url]
 
+Installation
+------------
+
+```bash
+$ npm install findout --save
+```
+
+
 Usage
 -----
 
-`findout(name)` works like require(), but has a lot more locations to search.  
+`findout(name)` works like `require()`, but has a lot more locations to search.  
 
 ```javascript
 var findout = require('findout');
@@ -22,7 +30,7 @@ var findout = require('findout');
 // Resolve a module path.
 var pathOfFoo = findout.resolve('foo');
 
-// Find out a module.
+// Find and require a module.
 var foo = findout('foo', {
     cwd: __dirname // Lookup from current directory.
 });
@@ -32,15 +40,15 @@ var foo = findout('foo', {
 How it works
 ------------
 
-If you call `findout('foo')` with below options,
+When you call `findout` for "foo" with '/bar/baz' as current working directory:  
 
 ```javascript
 findout('foo', {
-    cwd: '/bar/baz');
+    cwd: '/bar/baz';
 });
 ```
 
-findout will try in the following ways, 
+and it will try the following ways, 
 
 1. `require('foo')`
 2. `require('/bar/baz/foo')`
