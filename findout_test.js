@@ -14,3 +14,12 @@ exports['Do resolve.'] = function (test) {
     });
     test.done();
 };
+
+
+exports['Do findout.'] = function (test) {
+    test.ok(findout(__filename));
+    test.throws(function () {
+        findout('__invalid_module_name_______');
+    });
+    test.done();
+};
