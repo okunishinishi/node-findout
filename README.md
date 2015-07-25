@@ -61,8 +61,6 @@ and it will try the following ways,
 If it still can't find any, throws an error.
 
 
-
-
 License
 -------
 This software is released under the [MIT License][my_license_url].
