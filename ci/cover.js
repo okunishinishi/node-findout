@@ -6,12 +6,10 @@
 
 "use strict";
 
-var path = require('path'),
-    apeTasking = require('ape-tasking'),
-    apeCovering = require('ape-covering');
+process.chdir(__dirname + '/..');
 
-var basedir = path.resolve(__dirname, '..');
-process.chdir(basedir);
+var apeTasking = require('ape-tasking'),
+    apeCovering = require('ape-covering');
 
 apeTasking.runTasks('cover', [
     function (callback) {
