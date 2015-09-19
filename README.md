@@ -20,6 +20,7 @@ findout
 [bd_gemnasium_shield_url]: https://gemnasium.com/okunishinishi/node-findout.svg
 [bd_npm_url]: http://www.npmjs.org/package/findout
 [bd_npm_shield_url]: http://img.shields.io/npm/v/findout.svg?style=flat
+[bd_bower_badge_url]: https://img.shields.io/bower/v/findout.svg?style=flat
 
 <!-- Badge End -->
 
@@ -33,9 +34,13 @@ Find out a module.
 
 
 
+
 <!-- Sections Start -->
 <a name="sections"></a>
 
+<!-- Section from "doc/readme/01.Installation.md.hbs" Start -->
+
+<a name="section-doc-readme-01-installation-md"></a>
 Installation
 -----
 
@@ -43,6 +48,11 @@ Installation
 npm install findout --save
 ```
 
+<!-- Section from "doc/readme/01.Installation.md.hbs" End -->
+
+<!-- Section from "doc/readme/02.Usage.md.hbs" Start -->
+
+<a name="section-doc-readme-02-usage-md"></a>
 Usage
 ----
 
@@ -62,6 +72,11 @@ var foo = findout('foo', {
 
 ```
 
+<!-- Section from "doc/readme/02.Usage.md.hbs" End -->
+
+<!-- Section from "doc/readme/03.How.md.hbs" Start -->
+
+<a name="section-doc-readme-03-how-md"></a>
 How It Works
 ------------
 
@@ -84,6 +99,8 @@ and it will try the following ways,
 7. `require('/node_modules/foo')`
 
 If it still can't find any, throws an error.
+
+<!-- Section from "doc/readme/03.How.md.hbs" End -->
 
 
 <!-- Sections Start -->

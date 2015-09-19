@@ -5,7 +5,7 @@
 
 "use strict";
 
-var findout = require('./findout');
+var findout = require('../lib/findout');
 
 exports['Do resolve.'] = function (test) {
     test.equal(findout.resolve(__filename), __filename);
