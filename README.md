@@ -102,6 +102,18 @@ If it still can't find any, throws an error.
 
 <!-- Section from "doc/readme/03.How.md.hbs" End -->
 
+<!-- Section from "doc/readme/04.Options.md.hbs" Start -->
+
+<a name="section-doc-readme-04-options-md"></a>
+Options
+-------
+
+| Key | Type | Default | Description |
+| --- | --- | --- | --- |
+| cwd | string | process.cwd() | Working directory path. |
+| safe | boolean | false | No throw when not found. |
+<!-- Section from "doc/readme/04.Options.md.hbs" End -->
+
 
 <!-- Sections Start -->
 
