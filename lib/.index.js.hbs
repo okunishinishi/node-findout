@@ -11,4 +11,5 @@ var findout = require('./findout'),
 
 var lib = findout.bind(this);
 lib.version = pkg.version;
+lib.resolve = resolve;
 module.exports = lib;

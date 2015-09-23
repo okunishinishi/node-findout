@@ -12,5 +12,6 @@ exports['Eval properties.'] = function(test){
         test.ok(key);
         test.ok(index[key]);
     });
+    test.ok(index.resolve);
     test.done();
 };
