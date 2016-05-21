@@ -1,17 +1,20 @@
 /**
  * Test for index.js
- * Runs with nodeunit.
+ * Runs with mocha.
  */
 
-"use strict";
+'use strict'
 
-var index = require('../lib/index.js');
+const index = require('../lib/index.js')
+const co = require('co')
+const assert = require('assert')
 
-exports['Eval properties.'] = function(test){
-    Object.keys(index).forEach(function(key){
-        test.ok(key);
-        test.ok(index[key]);
-    });
-    test.ok(index.resolve);
-    test.done();
-};
+it('Eval properties.', () => co(function * () {
+  Object.keys(index).forEach((key) => {
+    assert.ok(key)
+    assert.ok(index[ key ])
+  })
+  assert.ok(index.resolve)
+}))
+
+/* global it */

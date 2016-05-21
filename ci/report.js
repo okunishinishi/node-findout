@@ -1,18 +1,16 @@
 #!/usr/bin/env node
 
 /**
- * Run report
+ * Send reports.
  */
 
-"use strict";
+'use strict'
 
-process.chdir(__dirname + '/..');
+process.chdir(`${__dirname}/..`)
 
-var apeTasking = require('ape-tasking'),
-    apeReporting = require('ape-reporting');
+const apeTasking = require('ape-tasking')
+const apeReporting = require('ape-reporting')
 
-apeTasking.runTasks([
-    function (callback) {
-        apeReporting.sendToCodeclimate('coverage/lcov.info', callback);
-    }
-], true);
+apeTasking.runTasks('report', [
+  () => apeReporting.sendToCodeclimate('coverage/lcov.info', {})
+], true)

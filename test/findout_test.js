@@ -1,21 +1,22 @@
 /**
  * Unit test for findout.
- * Runs with nodeunit.
+ * Runs with mocha.
  */
 
-"use strict";
+'use strict'
 
-var findout = require('../lib/findout');
+const findout = require('../lib/findout')
+const co = require('co')
+const assert = require('assert')
 
-exports['Do findout.'] = function (test) {
-    test.ok(findout(__filename));
-    test.throws(function () {
-        findout('__invalid_module_name_______');
-    });
-    test.doesNotThrow(function () {
-        findout('__invalid_module_name_______', {
-            safe: true
-        });
-    });
-    test.done();
-};
+it('Do findout.', () => co(function * () {
+  assert.ok(findout(__filename))
+  assert.throws(() => {
+    findout('__invalid_module_name_______')
+  })
+  assert.doesNotThrow(() => {
+    findout('__invalid_module_name_______', {
+      safe: true
+    })
+  })
+}))

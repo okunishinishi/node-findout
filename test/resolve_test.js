@@ -1,22 +1,16 @@
 /**
  * Test case for resolve.
- * Runs with nodeunit.
+ * Runs with mocha.
  */
+'use strict'
 
-var resolve = require('../lib/resolve.js');
+const resolve = require('../lib/resolve.js')
+const co = require('co')
+const assert = require('assert')
 
-exports.setUp = function (done) {
-    done();
-};
-
-exports.tearDown = function (done) {
-    done();
-};
-
-exports['Do resolve.'] = function (test) {
-    test.equal(resolve(__filename), __filename);
-    test.throws(function () {
-        resolve('__invalid_module_name_______');
-    });
-    test.done();
-};
+it('Do resolve.', () => co(function * () {
+  assert.equal(resolve(__filename), __filename)
+  assert.throws(function () {
+    resolve('__invalid_module_name_______')
+  })
+}))
