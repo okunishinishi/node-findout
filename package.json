@@ -1,6 +1,6 @@
 {
   "name": "findout",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Find out a module.",
   "main": "lib",
   "scripts": {
