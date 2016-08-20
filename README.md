@@ -49,6 +49,7 @@ Find out a module.
 <!-- Section from "doc/guides/01.Installation.md.hbs" Start -->
 
 <a name="section-doc-guides-01-installation-md"></a>
+
 Installation
 -----
 
@@ -62,6 +63,7 @@ npm install findout --save
 <!-- Section from "doc/guides/02.Usage.md.hbs" Start -->
 
 <a name="section-doc-guides-02-usage-md"></a>
+
 Usage
 ----
 
@@ -90,6 +92,7 @@ let foo = findout('foo', {
 <!-- Section from "doc/guides/03.How.md.hbs" Start -->
 
 <a name="section-doc-guides-03-how-md"></a>
+
 How It Works
 ------------
 
@@ -119,6 +122,7 @@ If it still can't find any, throws an error.
 <!-- Section from "doc/guides/04.Options.md.hbs" Start -->
 
 <a name="section-doc-guides-04-options-md"></a>
+
 Options
 -------
 
