@@ -1,6 +1,6 @@
 {
   "name": "findout",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "Find out a module.",
   "main": "shim/node",
   "browser": false,
