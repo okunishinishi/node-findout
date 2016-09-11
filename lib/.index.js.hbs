@@ -7,13 +7,11 @@
 
 const findout = require('./findout')
 const resolve = require('./resolve')
-const pkg = require('../package.json')
 
 let lib = findout.bind(this)
 
 Object.assign(lib, {
-  resolve,
-  version: pkg.version
+  resolve
 })
 
 module.exports = lib
