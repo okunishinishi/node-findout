@@ -6,10 +6,10 @@
 'use strict'
 
 const findout = require('../lib/findout')
-const co = require('co')
+
 const assert = require('assert')
 
-it('Do findout.', () => co(function * () {
+it('Do findout.', () => {
   assert.ok(findout(__filename))
   assert.throws(() => {
     findout('__invalid_module_name_______')
@@ -19,4 +19,4 @@ it('Do findout.', () => co(function * () {
       safe: true
     })
   })
-}))
+})
