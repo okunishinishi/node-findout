@@ -1,6 +1,6 @@
 {
   "name": "findout",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "Find out a module.",
   "main": "lib",
   "browser": {
@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "node ./ci/test.js",
-    "prepublish": "node ./ci/build.js"
+    "prepare": "node ./ci/build.js"
   },
   "repository": "okunishinishi/node-findout",
   "keywords": [
