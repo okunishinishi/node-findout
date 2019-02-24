@@ -26,12 +26,12 @@
   "homepage": "https://github.com/okunishinishi/node-findout#readme",
   "dependencies": {},
   "devDependencies": {
-    "amocha": "^3.0.0",
-    "ape-releasing": "^4.0.4",
+    "amocha": "^5.0.1",
+    "ape-releasing": "^5.0.1",
     "ape-tasking": "^4.0.8",
-    "ape-tmpl": "^6.0.0",
-    "ape-updating": "^4.0.5",
-    "coz": "^6.0.17"
+    "ape-tmpl": "^6.0.12",
+    "ape-updating": "^5.0.1",
+    "coz": "^7.0.9"
   },
   "engines": {
     "node": ">=7.6",
